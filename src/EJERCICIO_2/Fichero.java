@@ -25,10 +25,10 @@ public class Fichero {
 						miBufferSalida.write(miBuffer, 0, cantidadBytes);
 					}
 				}while(cantidadBytes > 0);
-				ficheroEntrada.close();
-				ficheroSalida.close();
 				miBufferEntrada.close();
 				miBufferSalida.close();
+				ficheroEntrada.close();
+				ficheroSalida.close();
 			}catch(IOException e) {
 				System.out.println("Error al leer o escribir el fichero");
 			}
@@ -38,24 +38,8 @@ public class Fichero {
 	}
 	
 	public static void borrarFichero(String fichero) {
-		try {
-			FileInputStream ficheroEntrada = new FileInputStream(fichero);
-			BufferedInputStream miBufferEntrada = new BufferedInputStream (ficheroEntrada);
-			byte miBuffer[] = new byte[256];
-			int cantidadBytes = 0;
-			try {
-				do {
-					cantidadBytes = miBufferEntrada.read(miBuffer);
-					
-				}while(cantidadBytes > 0);
-				miBufferEntrada.close();
-			
-			}catch(IOException e) {
-				System.out.println("Error al leer el fichero");
-			}
-		}catch (FileNotFoundException e){
-			System.out.println("Fichero no encontrado");
-		}
+		File f = new File(fichero);
+		f.delete();   
 	}
 	
 	public static int[] mostrarTamaño(String fichero) {
