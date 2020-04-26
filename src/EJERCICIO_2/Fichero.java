@@ -33,7 +33,7 @@ public class Fichero {
 				System.out.println("Error al leer o escribir el fichero");
 			}
 		} catch (FileNotFoundException e) {
-			System.out.println("Fichero no encontrado");
+			System.out.println("Alumno no encontrado");
 		}
 	}
 	
@@ -64,7 +64,7 @@ public class Fichero {
 				System.out.println("Dato no leído");
 			}
 		} catch (FileNotFoundException e) {
-			System.out.println("Fichero no leído");
+			System.out.println("Alumno no leído");
 		}
 		return datos;
 	}
