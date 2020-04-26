@@ -6,9 +6,18 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-
+/**
+ * Clase encargada de encriptar y desencrpitar ficheros de texto usando el método César https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar
+ * @author Dani
+ *
+ */
 public class Fichero {
 
+	/**
+	 * 
+	 * @param ficheroDescifrado Establece la ruta del fichero sin descifrar.
+	 * @param ficheroCifrado Establece la ruta del fichero que estará cifrado.
+	 */
 	public static void encriptarFichero(String ficheroDescifrado, String ficheroCifrado) {
 		try {
 			FileReader entrada = new FileReader(ficheroDescifrado);
@@ -37,6 +46,11 @@ public class Fichero {
 			}
 	}
 	
+	/**
+	 * 
+	 * @param ficheroCifrado Establece la ruta del fichero que estará cifrado.
+	 * @param ficheroDescifrado Establece la ruta del fichero sin descifrar.
+	 */
 	public static void desencriptarFichero(String ficheroCifrado, String ficheroDescifrado) {
 		try {
 			FileReader entrada = new FileReader(ficheroCifrado);
