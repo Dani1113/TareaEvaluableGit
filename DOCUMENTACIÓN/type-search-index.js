@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"EJERCICIO_3","l":"Alumno"},{"p":"EJERCICIO_1","l":"Fichero"},{"p":"EJERCICIO_2","l":"Fichero"},{"p":"EJERCICIO_3","l":"Fichero"},{"p":"EJERCICIO_1","l":"PruebaFichero"},{"p":"EJERCICIO_2","l":"PruebaFichero"},{"p":"EJERCICIO_3","l":"PruebaFichero"}]
