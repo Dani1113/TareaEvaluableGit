@@ -55,13 +55,4 @@ public class Alumno implements Serializable {
 	public void setEdad(int edad) {
 		this.edad = edad;
 	}
-	
-	//MÉTODOS
-	public void mostrarAlumno() {
-		System.out.println("-DATOS DEL ALUMNO-");
-		System.out.println("DNI -> " + this.dni);
-		System.out.println("Nombre -> " + this.nombre);
-		System.out.println("Dirección -> "+ this.dirección);
-		System.out.println("Edad -> " + this.edad);
-	}
 }
