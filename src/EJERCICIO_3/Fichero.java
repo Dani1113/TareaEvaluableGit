@@ -46,4 +46,11 @@ public class Fichero {
 		}
 		return a;
 	}
+	
+	public static void mostrarMenú() {
+		System.out.println("---ELIGE OPCIÓN---");
+		System.out.println("OPCIÓN 1 -> AÑADIR ALUMNO");
+		System.out.println("OPCIÓN 2 -> LISTAR ALUMNO");
+		System.out.println("OPCIÓN 3 -> SALIR");
+	}
 }
