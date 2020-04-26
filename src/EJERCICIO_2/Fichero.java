@@ -7,9 +7,18 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-
+/**
+ * Clase encargada de copiar, borrar y ver la cantidad de bytes de un fichero binario
+ * @author Dani
+ *
+ */
 public class Fichero {
 
+	/**
+	 * 
+	 * @param ficheroOrigen Establece la ruta de origen del fichero binario.
+	 * @param ficheroDestino Establece la ruta de destino del fichero binario.
+	 */
 	public static void copiarFichero(String ficheroOrigen, String ficheroDestino) {
 		try {
 			FileInputStream ficheroEntrada = new FileInputStream(ficheroOrigen);
@@ -37,11 +46,20 @@ public class Fichero {
 		}
 	}
 	
+	/**
+	 * 
+	 * @param fichero Establece la ruta del fichero a borrar
+	 */
 	public static void borrarFichero(String fichero) {
 		File f = new File(fichero);
 		f.delete();   
 	}
 	
+	/**
+	 * 
+	 * @param fichero Establece la ruta del fichero
+	 * @return datos Devuelve con un array la cantidad de bytes del fichero 
+	 */
 	public static int[] mostrarTamaño(String fichero) {
 		File ficheroF = new File(fichero);
 		int cantidadDeDatos = (int) ficheroF.length();
@@ -69,6 +87,9 @@ public class Fichero {
 		return datos;
 	}
 	
+	/**
+	 * Método encargado de mostrar el menú en el programa principal
+	 */
 	public static void mostrarMenú() {
 		System.out.println("---ELIGE OPCIÓN---");
 		System.out.println("OPCIÓN 1 -> COPIAR FICHERO");
