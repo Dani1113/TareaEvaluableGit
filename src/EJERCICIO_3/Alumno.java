@@ -1,12 +1,13 @@
 package EJERCICIO_3;
 
 import java.io.Serializable;
-
+/**
+ * 
+ * @author Dani
+ *
+ */
 public class Alumno implements Serializable {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = -3778215456590004418L;
 
 	//ATRIBUTOS
@@ -57,6 +58,9 @@ public class Alumno implements Serializable {
 	}
 	
 	//MÉTODOS
+	/**
+	 * Método encargado de mostrar los datos del alumno
+	 */
 	public void mostrarAlumno() {
 		System.out.println("-DATOS DEL ALUMNO-");
 		System.out.println("DNI -> " + this.dni);

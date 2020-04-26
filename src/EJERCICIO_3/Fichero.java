@@ -6,9 +6,18 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-
+/**
+ * Clase encargada de almacenar un fichero serializable .dat que guarde los datos de un alumno
+ * @author Dani
+ *
+ */
 public class Fichero {
 
+	/**
+	 * 
+	 * @param fichero Establece la ruta del fichero donde se guardarán los datos del alumno
+	 * @param a1 Viene de la clase Alumno y es el encargado de almacenar los datos de este
+	 */
 	public static void añadirAlumno(String fichero, Alumno a1){
 		try {
 			FileOutputStream ficheroSalida = new FileOutputStream(fichero);
@@ -25,6 +34,11 @@ public class Fichero {
 		}
 	}
 	
+	/**
+	 * 
+	 * @param fichero establece la ruta del fichero donde se guardan los datos del alumno
+	 * @return Devuelve los datos del alumno del fichero que los contiene
+	 */
 	public static Alumno listarAlumno(String fichero) {
 		Alumno a = null;
 		try {
@@ -47,6 +61,9 @@ public class Fichero {
 		return a;
 	}
 	
+	/**
+	 * Método encargado de mostrar el menú en el programa principal
+	 */
 	public static void mostrarMenú() {
 		System.out.println("---ELIGE OPCIÓN---");
 		System.out.println("OPCIÓN 1 -> AÑADIR ALUMNO");
